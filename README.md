@@ -9,7 +9,7 @@
 
 
 ## Specs
-![ss1](https://github.com/Mathew29/Parking-Garage-Locator/blob/master/src/Parking-Garage-Locator.png)
+![ss1](https://github.com/Mathew29/Parking-Garage-Locator/blob/master/src/assets/images/Parking-Garage-Locator.png) 
 
 
 ## Setup/Installation Requirements
