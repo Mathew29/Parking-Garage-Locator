@@ -9,7 +9,7 @@
 
 
 ## Specs
-![ss1](https://github.com/Mathew29/tap-room/blob/master/src/assets/images/TapRoom.png)
+![ss1](https://github.com/Mathew29/Parking-Garage-Locator/blob/master/src/Parking-Garage-Locator.png)
 
 
 ## Setup/Installation Requirements
