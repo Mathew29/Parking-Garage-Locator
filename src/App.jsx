@@ -1,6 +1,7 @@
 import React from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom';
+import Welcome from './Welcome';
 import Error404 from './Error404';
+import { Switch, Route, withRouter } from 'react-router-dom';
 
 import './App.css';
 
@@ -10,7 +11,8 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-
+          <Route exact path='/' component={Welcome} />
+          <Route component={Error404} />
         </Switch>
       </div>
     )
