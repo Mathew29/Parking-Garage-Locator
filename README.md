@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# _Parking Garage Locator_
 
-## Available Scripts
+#### _This is a program that will allow a user to receive directions to nearby parking garages. 7/19/2019_
 
-In the project directory, you can run:
+#### By _**Mathew Akre**_
 
-### `npm start`
+## Description
+#### _This program will find parking garages near the user with a Google Maps Api.  Information about the parking gargage will appear to the side of the map.  It will then give the user directions to the selected parking garage._
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Specs
+![ss1](https://github.com/Mathew29/tap-room/blob/master/src/assets/images/TapRoom.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup/Installation Requirements
+* _Clone Github repository_
+* _Open the command line_
+* _Change directory to desktop_
+* _Change the directory to parking-garage-locator_
+* _Run the command npm install_
+* _Run the command npm run start_
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Support and contact details
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+_mwakre29@gmail.com_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
+* _Javascript_
+* _React_
+* _HTML_
+* _CSS_
 
-### `npm run eject`
+### License
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+*This project is under the MIT License*
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Copyright (c) 2019 **_Mathew Akre_**
