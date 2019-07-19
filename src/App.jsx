@@ -1,10 +1,10 @@
 import React from 'react';
 import Welcome from './Welcome';
 import Error404 from './Error404';
+import GoogleMap from './GoogleMap';
 import { Switch, Route, withRouter } from 'react-router-dom';
 
 import './App.css';
-import GoogleMap from './GoogleMap';
 
 class App extends React.Component {
 
