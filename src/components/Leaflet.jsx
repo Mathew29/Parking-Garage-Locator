@@ -13,13 +13,15 @@ var myIcon =L.icon({
 class LeafletMap extends Component {
 
   state = {
-    lat: 45.5127,
-    lng: -122.6795,
+    location: {
+      lat: 45.5127,
+      lng: -122.6795,
+    },
     zoom: 13
   }
 
   render() {
-    const position = [this.state.lat, this.state.lng];
+    const position = [this.state.location.lat, this.state.location.lng];
     return (
       <Map className="map" center={position} zoom={this.state.zoom}>
       <TileLayer
