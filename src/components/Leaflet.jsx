@@ -70,35 +70,35 @@ class Leaflet extends Component {
         position={hardCodePositionOne}
         icon={myIcon} >
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+        730 SW 10th Ave, Portland, OR 97205
         </Popup>
       </Marker>
       <Marker 
         position={hardCodePositionTwo}
         icon={myIcon} >
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+        818 SW 4th Ave, Portland, OR 97204
         </Popup>
       </Marker>
       <Marker 
         position={hardCodePositionThree}
         icon={myIcon} >
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+        120 SW Clay St, Portland, OR 97204
         </Popup>
       </Marker>
       <Marker 
         position={hardCodePositionFour}
         icon={myIcon} >
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+        7418 NW Station Way, Portland, OR 97209
         </Popup>
       </Marker>
       <Marker 
         position={hardCodePositionFive}
         icon={myIcon} >
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+        127 N Winning Way, Portland, OR 97227
         </Popup>
       </Marker>
 
