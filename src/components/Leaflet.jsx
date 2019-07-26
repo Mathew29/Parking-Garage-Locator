@@ -10,18 +10,49 @@ var myIcon =L.icon({
   popupAnchor: [0, -41]
 });
 
-class LeafletMap extends Component {
+//first address 730 SW 10th Ave, Portland, OR 97205
+//second address 818 SW 4th Ave, Portland, OR 97204
+//third address 120 SW Clay St, Portland, OR 97204
+//fourth adddress 7418 NW Station Way, Portland, OR 97209
+//fifth address 127 N Winning Way, Portland, OR 97227
+
+class Leaflet extends Component {
 
   state = {
     location: {
       lat: 45.5127,
       lng: -122.6795,
     },
+    hardCodeOne: {
+      lat: 45.5194,
+      lng: -122.6818
+    },
+    hardCodeTwo: {
+      lat: 45.5159,
+      lng: -122.6779
+    },
+    hardCodeThree: {
+      lat: 45.5119,
+      lng: -122.6774
+    },
+    hardCodeFour: {
+      lat: 45.5281,
+    lng: -122.6766
+    },
+    hardCodeFive: {
+      lat: 45.5331,
+      lng: -122.6673
+    },
     zoom: 13
   }
 
   render() {
     const position = [this.state.location.lat, this.state.location.lng];
+    const hardCodePositionOne = [this.state.hardCodeOne.lat, this.state.hardCodeOne.lng];
+    const hardCodePositionTwo = [this.state.hardCodeTwo.lat, this.state.hardCodeTwo.lng];
+    const hardCodePositionThree = [this.state.hardCodeThree.lat, this.state.hardCodeThree.lng];
+    const hardCodePositionFour = [this.state.hardCodeFour.lat, this.state.hardCodeFour.lng];
+    const hardCodePositionFive = [this.state.hardCodeFive.lat, this.state.hardCodeFive.lng];
     return (
       <Map className="map" center={position} zoom={this.state.zoom}>
       <TileLayer
@@ -35,9 +66,46 @@ class LeafletMap extends Component {
           A pretty CSS3 popup. <br /> Easily customizable.
         </Popup>
       </Marker>
+      <Marker 
+        position={hardCodePositionOne}
+        icon={myIcon} >
+        <Popup>
+          A pretty CSS3 popup. <br /> Easily customizable.
+        </Popup>
+      </Marker>
+      <Marker 
+        position={hardCodePositionTwo}
+        icon={myIcon} >
+        <Popup>
+          A pretty CSS3 popup. <br /> Easily customizable.
+        </Popup>
+      </Marker>
+      <Marker 
+        position={hardCodePositionThree}
+        icon={myIcon} >
+        <Popup>
+          A pretty CSS3 popup. <br /> Easily customizable.
+        </Popup>
+      </Marker>
+      <Marker 
+        position={hardCodePositionFour}
+        icon={myIcon} >
+        <Popup>
+          A pretty CSS3 popup. <br /> Easily customizable.
+        </Popup>
+      </Marker>
+      <Marker 
+        position={hardCodePositionFive}
+        icon={myIcon} >
+        <Popup>
+          A pretty CSS3 popup. <br /> Easily customizable.
+        </Popup>
+      </Marker>
+
+
     </Map>
     )
   }
 }
 
-export default LeafletMap;
+export default Leaflet;
