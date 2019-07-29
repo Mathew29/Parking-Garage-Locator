@@ -31,10 +31,10 @@ function LeafletMarker(props) {
 
 LeafletMarker.propTypes = {
   lat: PropTypes.number.isRequired,
-  lng: PropTypes.number,
-  street: PropTypes.string,
-  city: PropTypes.string,
-  state: PropTypes.string,
+  lng: PropTypes.number.isRequired,
+  street: PropTypes.string.isRequired,
+  city: PropTypes.string.isRequired,
+  state: PropTypes.string.isRequired,
   zip: PropTypes.number
 }
 
