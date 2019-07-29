@@ -4,7 +4,7 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import './Leaflet.css';
 import LeafletMarker from './LeafletMarker';
-import { isObjectPattern } from '@babel/types';
+
 
 
 var myIcon =L.icon({
