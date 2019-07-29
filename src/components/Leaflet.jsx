@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import './Leaflet.css';
 import LeafletMarker from './LeafletMarker';
-import PropTypes from 'prop-types';
+import { isObjectPattern } from '@babel/types';
 
 
 var myIcon =L.icon({
@@ -46,25 +47,15 @@ class Leaflet extends Component {
           A pretty CSS3 popup. <br /> Easily customizable.
         </Popup>
       </Marker>
-      {Object.entries(this.props.parkingGarage).map((garage) =>
-        {garage.map((mark) => 
-          <LeafletMarker lat={mark.lat}
-          lng={mark.lng}
-          street={mark.street}
-          city={mark.city}
-          state={mark.state}
-          zip={mark.zip}
-          />
-          
-          
-          )}
-        
-        
+      {Object.keys(this.props.parkingGarage).map((garage) =>
+        <LeafletMarker lat={this.props.parkingGarage[garage].lat}
+        lng={this.props.parkingGarage[garage].lng}
+        street={this.props.parkingGarage[garage].street}
+        city={this.props.parkingGarage[garage].city}
+        state={this.props.parkingGarage[garage].state}
+        zip={this.props.parkingGarage[garage].zip}
+        />
         )}
-      
-      
-
-
     </Map>
     )
   }
@@ -76,3 +67,9 @@ Leaflet.propTypes = {
 
 export default Leaflet;
 
+
+
+          // {Object.keys(this.props.parkingGarage[garage]).map((mark) =>
+            
+            
+          //   )}
