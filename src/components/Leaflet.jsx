@@ -42,10 +42,3 @@ Leaflet.propTypes = {
 }
 
 export default Leaflet;
-
-
-
-          // {Object.keys(this.props.parkingGarage[garage]).map((mark) =>
-            
-            
-          //   )}
