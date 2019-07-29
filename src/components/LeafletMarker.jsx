@@ -15,6 +15,8 @@ function LeafletMarker(props) {
   const position = [props.lat, props.lng];
   const address = `${props.street}, ${props.city}, ${props.state} ${props.zip}`;
   return(
+  
+    
     <div>
       <Marker 
         position={position}
@@ -29,11 +31,11 @@ function LeafletMarker(props) {
 
 LeafletMarker.propTypes = {
   lat: PropTypes.number.isRequired,
-  lng: PropTypes.any,
-  street: PropTypes.any,
-  city: PropTypes.any,
-  state: PropTypes.any,
-  zip: PropTypes.any
+  lng: PropTypes.number,
+  street: PropTypes.string,
+  city: PropTypes.string,
+  state: PropTypes.string,
+  zip: PropTypes.number
 }
 
 export default LeafletMarker;
