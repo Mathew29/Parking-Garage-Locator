@@ -28,3 +28,4 @@ src/fire.js
 .firebaserc
 database.rules.json
 firebase.json
+.firebase
