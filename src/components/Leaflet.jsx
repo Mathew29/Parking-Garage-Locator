@@ -26,13 +26,14 @@ class Leaflet extends Component {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {Object.keys(this.props.parkingGarage).map((garage) =>
-        <LeafletMarker lat={this.props.parkingGarage.lat}
-        lng={this.props.parkingGarage.lng}
-        street={this.props.parkingGarage.street}
-        city={this.props.parkingGarage.city}
-        state={this.props.parkingGarage.state}
-        zip={this.props.parkingGarage.zip}
-        />
+      <LeafletMarker lat={this.props.parkingGarage[garage].lat}
+      lng={this.props.parkingGarage[garage].lng}
+      street={this.props.parkingGarage[garage].street}
+      city={this.props.parkingGarage[garage].city}
+      state={this.props.parkingGarage[garage].state}
+      zip={this.props.parkingGarage[garage].zip}
+      />
+        
         )}
     </Map>
     )
@@ -44,3 +45,4 @@ Leaflet.propTypes = {
 }
 
 export default Leaflet;
+
