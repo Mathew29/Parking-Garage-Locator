@@ -16,6 +16,8 @@ class Leaflet extends Component {
   }
 
   render() {
+    console.log(this.props.parkingGarage);
+    
     const position = [this.state.location.lat, this.state.location.lng];
     return (
       <Map className="map" center={position} zoom={this.state.zoom}>
@@ -24,13 +26,14 @@ class Leaflet extends Component {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {Object.keys(this.props.parkingGarage).map((garage) =>
-        <LeafletMarker lat={this.props.parkingGarage[garage].lat}
-        lng={this.props.parkingGarage[garage].lng}
-        street={this.props.parkingGarage[garage].street}
-        city={this.props.parkingGarage[garage].city}
-        state={this.props.parkingGarage[garage].state}
-        zip={this.props.parkingGarage[garage].zip}
-        />
+      <LeafletMarker lat={this.props.parkingGarage[garage].lat}
+      lng={this.props.parkingGarage[garage].lng}
+      street={this.props.parkingGarage[garage].street}
+      city={this.props.parkingGarage[garage].city}
+      state={this.props.parkingGarage[garage].state}
+      zip={this.props.parkingGarage[garage].zip}
+      />
+        
         )}
     </Map>
     )
@@ -42,3 +45,4 @@ Leaflet.propTypes = {
 }
 
 export default Leaflet;
+
