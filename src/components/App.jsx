@@ -15,15 +15,20 @@ class App extends React.Component {
     };
   }
 
-  componentWillMount(){
-    let garageRef = fire.database().ref('garage').orderByKey().limitToLast(100);
-    garageRef.on('child_added', snapshot => {
+  componentDidMount(){
+    let garageRef = fire.database().ref('garage');
+    garageRef.once('value').then(snapshot => {
+      const newGarage = Object.assign({}, snapshot.val(), {
+        id: snapshot.getKey()
+      })
       console.log(snapshot.val());
-
-      // let parking = {parkingOne: snapshot.val()};
-      // let garages = { lat: snapshot.val(), lng: snapshot.val(), street: snapshot.val(), city: snapshot.val(), state: snapshot.val(), zip: snapshot.val() };
+      console.log(newGarage);
       this.setState({ garage: snapshot.val() });
+
+      
+      
     })
+    
   }
 
   render() {
