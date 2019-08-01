@@ -5,7 +5,7 @@
 #### By _**Mathew Akre**_
 
 ## Description
-#### _This program will find parking garages near the user with a Google Maps Api.  Information about the parking gargage will appear to the side of the map.  It will then give the user directions to the selected parking garage._
+#### _This program will find parking garages near the user with Leaflet Maps Api.  Information about the parking gargage will appear at the bottom of the map.  It will then give the user directions to the selected parking garage.  Deployed on Firebase https://parking-garage-locator.firebaseapp.com/#/map_
 
 
 ## Specs
